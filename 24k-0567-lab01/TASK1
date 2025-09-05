@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main() {
+    cout<<"Enter number of Courses: ";
+    int numOfCourses;
+    cin>>numOfCourses;
+    string* names = new string[numOfCourses];
+    for(int i=0;i<numOfCourses;i++) {
+        cout<<"Number " << i+1<<" : ";
+        cin>>names[i];
+    }
+    for(int i=0;i<numOfCourses;i++) {
+        cout<<"Number " << i+1<<" : ";
+        cout<<names[i]<<" \n";
+    } delete names;
+}
