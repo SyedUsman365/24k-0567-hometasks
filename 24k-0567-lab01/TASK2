@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Box
 {
 public:
@@ -31,7 +30,6 @@ public:
         cout << *volume << endl;
     }
 };
-
 int main()
 {
     Box b1(10);
@@ -39,9 +37,7 @@ int main()
     cout << "Before Changes:\n";
     b1.show();
     b2.show();
-
     b2.setVolume(25);
-
     cout << "After Changing B2:\n";
     b1.show();
     b2.show();
